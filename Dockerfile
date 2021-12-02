@@ -1,8 +1,4 @@
-FROM node:alpine as build
-
-ENV NODE_OPTIONS=--openssl-legacy-provider
-ENV CHROME_BIN='/usr/bin/chromium-browser'
-ENV PATH /app/node_modules/.bin:$PATH
+FROM node:16-alpine as build
 
 WORKDIR /app
 
