@@ -1,7 +1,11 @@
 FROM node:16-alpine
 
+# install chrome for tests
+RUN apk add chromium
+
 WORKDIR /app
 
+ENV CHROME_BIN='/usr/bin/chromium-browser'
 ENV PATH /app/node_modules/.bin:$PATH
 
 COPY package.json package-lock.json ./
