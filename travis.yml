@@ -1,0 +1,11 @@
+sudo: required
+language: generic
+
+services:
+  - docker
+
+before_install:
+  - docker build -t karolniedziela/fibonacci:1 -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true karolniedziela/fibonacci:1 ng test --karma-config karma.conf.js fibonacci
