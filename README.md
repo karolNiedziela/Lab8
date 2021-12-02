@@ -1,9 +1,9 @@
-# Środowisko dev
-Budowa dev obrazu: 
+# Dokcerfile.dev
+Budowa obrazu: 
 
 `docker build -f Dockerfile.dev -t local/fibonacci:1 .`
 
-Uruchomienie dev kontenera:
+Uruchomienie kontenera:
 
 `docker run -it -p 4200:4200 -v /app/node_modules -v ${pwd}:/app local/fibonacci:1.`
 
