@@ -1,4 +1,4 @@
-# Dokcerfile.dev
+# Dockerfile.dev
 Budowa obrazu: 
 
 `docker build -f Dockerfile.dev -t local/fibonacci:1 .`
@@ -19,7 +19,15 @@ Do uruchomienia kontenera użyto polecenia:
 
 # Travis CI
 
-![image](https://user-images.githubusercontent.com/51209004/144445398-7cf5336a-b4fa-4154-bf1d-5ccfaaf8b2f5.png)
+![image](https://user-images.githubusercontent.com/51209004/144466652-12ce3f10-5e12-40c9-bf8f-4b1ff0df3860.png)
 
 ![image](https://user-images.githubusercontent.com/51209004/144445549-ce250278-3f19-47ee-adb8-5470e29e5f0e.png)
 
+Dodanie deploy dla Heroku:
+![image](https://user-images.githubusercontent.com/51209004/144460378-f41c56b4-617a-4b3d-8e6d-100a1f0d41f1.png)
+
+Wygląd na Heroku:
+![image](https://user-images.githubusercontent.com/51209004/144466387-05141063-8985-472e-a5a5-7ac9e65598d1.png)
+
+Link do aplikacji na heroku:
+https://fibonacci-lab8.herokuapp.com/
