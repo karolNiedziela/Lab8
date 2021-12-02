@@ -5,7 +5,7 @@ Budowa dev obrazu:
 
 Uruchomienie dev kontenera:
 
-`docker build -f Dockerfile.dev -t local/fibonacci:1 .`
+`docker run -it -p 4200:4200 -v /app/node_modules -v ${pwd}:/app local/fibonacci:1.`
 
 # Multi stage build z wykorzystaniem nigx
 
