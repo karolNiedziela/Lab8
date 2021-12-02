@@ -1,19 +1,15 @@
 sudo: required
 language: generic
-
 services:
   - docker
-
 before_install:
   - docker build -t karolniedziela/lab8 -f Dockerfile.dev .
-
 script:
   - docker run -e CI=true karolniedziela/lab8 npm run test
-
 deploy:
   provider: heroku
   api_key:
-    secure: $HEROKU_API_KEY
+    secure: etp6H4Y5cG1u8QfI+F8QsF3aeFuSFZ8/n290JVY5kzhJujg5svMqIRqyIAw+npfWtBCwtWWpiyqZ8+b9T9E79OeLE5nmcaNvP24YxTt0DLSLDVFsgCwBAoE6x2QeLJRDrlm4ZhBPA5WKti9th5opXb5mvStT/IWiKGLFzeA+kV8kqwg9wROiU7T33dPzYAJIRZASg0LgiMbqP6zfVC1buh6owM+pY0zFhfaHCIv8MPd8JS50sy/53i9yPg70zQWQb9v6eJiCzfQup+qdAEx9TklRBRGr63A2/rhTrHWt7Emkq98CY7MuSq88G4acrc5dcwERi6n/fKhvIxB1XSkQ/hZpjGCWcq11t649sgQZE7qDzk4WjqzOUbHcfhlyN+BKYDSqDaY6Tb83XSu6NCNbk7Baj4SW702UwCY82eyYJ8+JwX17vpi+38BJX+FbQzPFHpEnxQzTSoA2d8HxcacjqJ0ZsVW9BxjSLDlIpdFqvkEUV/J5+GrwNYWDfyeL4TgsYollBc1ocJRlLoL0jGUKbWvzyMbo25dD86U9MKqV393fIGK1CjXMAvgN1d2XKIT/RrfmypPZAN1o/T1x2ou8Ws/6s3OBJCIfRyPc/zbAkVfGPXo/HACe01Rdoxn+7FVt1JgjTouwbDt2sE23gGUgaBM9ltkS0eayhThh3CkN3gQ=
   app: fibonacci-lab8
 true:
   repo: karolNiedziela/Lab8
