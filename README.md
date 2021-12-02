@@ -1,3 +1,4 @@
+# Środowisko dev
 Budowa dev obrazu: 
 
 `docker build -f Dockerfile.dev -t local/fibonacci:1 .`
@@ -6,7 +7,7 @@ Uruchomienie dev kontenera:
 
 `docker build -f Dockerfile.dev -t local/fibonacci:1 .`
 
-Multi stage build z wykorzystaniem nigx
+# Multi stage build z wykorzystaniem nigx
 
 Aby zbudować obraz użyto polecenia:
 
