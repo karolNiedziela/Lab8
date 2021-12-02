@@ -8,4 +8,4 @@ before_install:
   - docker build -t karolniedziela/lab8 -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true karoliedziela/lab8 ng test --karma-config karma.conf.js fibonacci
+  - docker run -e CI=true karolniedziela/lab8 ng test --karma-config karma.conf.js fibonacci
