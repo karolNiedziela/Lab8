@@ -9,3 +9,10 @@ before_install:
 
 script:
   - docker run -e CI=true karolniedziela/lab8 npm run test
+
+deploy:
+  provider: heroku
+  api_key: $HEROKU_API_KEY
+  app: fibonacci-lab8
+on:
+  repo: karolNiedziela/Lab8
