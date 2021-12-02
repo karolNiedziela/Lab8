@@ -1,4 +1,4 @@
-FROM node:16-alpine
+FROM node:alpine
 
 # install chrome for tests
 RUN apk add chromium
@@ -13,6 +13,6 @@ COPY package.json package-lock.json ./
 RUN npm install
 RUN npm install -g @angular/cli
 
-COPY . ./app
+COPY . .
 
 CMD ["npm" "run" "start"]
