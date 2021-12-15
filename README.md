@@ -7,7 +7,7 @@ Uruchomienie kontenera:
 
 `docker run -it -p 4200:4200 -v /app/node_modules -v ${pwd}:/app local/fibonacci:1.`
 
-# Multi stage build z wykorzystaniem nigx
+# Multi stage build z wykorzystaniem nginx
 
 Aby zbudować obraz użyto polecenia:
 
